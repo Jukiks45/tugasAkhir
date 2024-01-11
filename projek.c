@@ -23,7 +23,7 @@ void displayFood(char menu[2][7][50], int prices[2][7], int orderFood[20], int q
     }
 };
 
-void displayDrink(char menu[2][7][50], int prices[2][7],int orderDrink[20], int qtyDrink[20])
+void displayDrink(char menu[2][7][50], int prices[2][7], int orderDrink[20], int qtyDrink[20])
 {
     char end = 'n';
     int j = 0;
@@ -57,15 +57,15 @@ int main()
         {0, 5000, 6000, 10000, 3000, 4000, 0}};
     printf("== WELCOME == \n");
     displayFood(menu, prices, orderFood, qtyFood);
-    displayDrink(menu, prices,orderDrink,qtyDrink);
+    displayDrink(menu, prices, orderDrink, qtyDrink);
     for (size_t i = 0; i < 3; i++)
     {
-        printf("order : %d \n",orderFood[i]);
+        printf("order : %d \n", orderFood[i]);
     }
     for (size_t i = 0; i < 3; i++)
     {
-        printf("qty : %d \n",qtyFood[i]);
+        printf("qty : %d \n", qtyFood[i]);
     }
-    
+
     return 0;
 }
